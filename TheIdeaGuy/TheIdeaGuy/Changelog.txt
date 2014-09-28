@@ -11,3 +11,10 @@
 + Added Notes File
 + Added Changelog File
 -------------------------
+29/09/2014 - Dylan Hughes
++ Added World Class
++ Added World Timer
++ Added Ability to change Day speed
++ Added Date Array
++ Added Date Increase Method for World Class
+--------------------------

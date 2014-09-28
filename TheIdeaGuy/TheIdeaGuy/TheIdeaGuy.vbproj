@@ -98,6 +98,7 @@
     <Compile Include="Project Types\ProjectFilm.vb" />
     <Compile Include="Project Types\ProjectGame.vb" />
     <Compile Include="Project Types\ProjectTech.vb" />
+    <Compile Include="World.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
