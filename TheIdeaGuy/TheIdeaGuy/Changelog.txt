@@ -1,0 +1,13 @@
+﻿Legend:
++ = Addition
+- = Deletion
+/ = Modification
+
+28/09/2014 - Dylan Hughes
++ Added Projects Class
++ Added ProjectFilm Class
++ Added ProjectGame Class
++ Added ProjectTech Class
++ Added Notes File
++ Added Changelog File
+-------------------------
