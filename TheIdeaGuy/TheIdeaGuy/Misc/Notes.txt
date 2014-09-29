@@ -1,0 +1,4 @@
+﻿TODO:
+Work on Skill Types
+Work on Worker Types
+Work on Perk Types

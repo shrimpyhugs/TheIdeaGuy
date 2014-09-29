@@ -1,0 +1,32 @@
+﻿Legend:
++ = Addition
+- = Deletion
+/ = Modification
+indent = addition inside of above addition
+
+28/09/2014 - Dylan Hughes
++ Added Projects Class
+	+ Added Backers, Funding, Target, DaysToGo, Popularity, Update Method
++ Added ProjectFilm Class
+	+ Added FilmTypes
++ Added ProjectGame Class
+	+ Added GameTypes
++ Added ProjectTech Class
+	+ Added TechTypes
++ Added Notes File
++ Added Changelog File
+-------------------------
+29/09/2014 - Dylan Hughes
++ Added World Class
+	+ Added World Timer
+	+ Added Ability to change Day speed
+	+ Added Date Array
+	+ Added Date Increase Method
++ Added Profile Class
++ Added Skill Class
++ Added Worker Class
++ Added Perks Class
+/ Modified Project Class to Include Worker Array
+/ Modified Project Class to include four Stages (Preproduction,funding,development,release)
+/ Modified Projec Class to include Perks Array
+--------------------------
