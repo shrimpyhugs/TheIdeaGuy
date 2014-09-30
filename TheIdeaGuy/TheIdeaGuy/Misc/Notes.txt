@@ -2,3 +2,7 @@
 Work on Skill Types
 Work on Worker Types
 Work on Perk Types
+Project Specific "Types"
+
+BUGS:
+Randomizer for Skills in NewGameDialog still produce duplicate results :/

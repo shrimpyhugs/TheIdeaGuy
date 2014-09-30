@@ -1,0 +1,11 @@
+C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\bin\Debug\TheIdeaGuy.exe
+C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\bin\Debug\TheIdeaGuy.pdb
+C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\bin\Debug\TheIdeaGuy.xml
+C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.Resources.resources
+C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.vbproj.GenerateResource.Cache
+C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.exe
+C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.xml
+C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.pdb
+C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.Screen.resources
+C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.Menu.resources
+C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.NewGameDialog.resources

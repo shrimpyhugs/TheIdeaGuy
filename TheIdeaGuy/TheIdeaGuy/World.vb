@@ -1,9 +1,11 @@
 ﻿Public Class World
     'Main class for the whole project
-    Public WithEvents WorldTimer As Timer
+    Public WithEvents WorldTimer As Timer = New Timer
     Dim CurrentDate() As Integer = {1, 1, 2015} 'Date array that stores D/M/Y
     Dim DayTicks As Integer = 10 'the number of ticks each day
     Dim CurrentTick As Integer = 0 'the current tick in the day
+    Dim MyProjects() As Project 'Array of Projects
+    Dim MyProfile As Profile 'creates player profile
 
     Public Sub New()
 
