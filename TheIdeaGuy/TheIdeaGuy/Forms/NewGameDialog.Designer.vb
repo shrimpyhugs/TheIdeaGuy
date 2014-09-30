@@ -147,7 +147,7 @@ Partial Class NewGameDialog
         Me.Name = "NewGameDialog"
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "dlgNewGame"
+        Me.Text = "Create New Game!"
         Me.TableLayoutPanel1.ResumeLayout(False)
         CType(Me.SkillTypesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

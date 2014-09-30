@@ -5,10 +5,10 @@ Public Class NewGameDialog
     Dim Skill2Previous As Integer 'stores skill 2's previous result for comparison
     Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK_Button.Click
         If txtName.Text IsNot "" Then 'if Name has been specified
-            Dim Temp As New Screen 'create new screen
-            Temp.Show() 'show new screen
-            Close() 'closes the Main Menu
-            Me.DialogResult = System.Windows.Forms.DialogResult.OK
+
+            Screen.Controls.Clear() 'remove main menu
+            Screen.Controls.Add(New pnlMain) 'adds main game panel
+
             Me.Close() 'closes the Dialog
         Else 'error message
             MsgBox("You need to specify a Name for your character!", vbOKOnly, "Name Required!")
@@ -16,9 +16,6 @@ Public Class NewGameDialog
     End Sub
 
     Private Sub Cancel_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel_Button.Click
-        Me.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Dim MainMenu As Menu = New Menu 'create Menu
-        MainMenu.Show() 'show Menu
         Me.Close() 'close dialog
     End Sub
 

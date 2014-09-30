@@ -1,8 +1,8 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Screen
-    Inherits System.Windows.Forms.Form
+Partial Class pnlProfile
+    Inherits System.Windows.Forms.UserControl
 
-    'Form overrides dispose to clean up the component list.
+    'UserControl overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
@@ -22,31 +22,34 @@ Partial Class Screen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.PnlMenu1 = New TheIdeaGuy.pnlMenu()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'PnlMenu1
+        'Label1
         '
-        Me.PnlMenu1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.Label1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PnlMenu1.AutoSize = True
-        Me.PnlMenu1.Location = New System.Drawing.Point(12, 12)
-        Me.PnlMenu1.Name = "PnlMenu1"
-        Me.PnlMenu1.Size = New System.Drawing.Size(544, 346)
-        Me.PnlMenu1.TabIndex = 0
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(108, 89)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(52, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "PROFILE"
         '
-        'Screen
+        'pnlProfile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(568, 370)
-        Me.Controls.Add(Me.PnlMenu1)
-        Me.Name = "Screen"
-        Me.Text = "Screen"
+        Me.AutoSize = True
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.Controls.Add(Me.Label1)
+        Me.Name = "pnlProfile"
+        Me.Size = New System.Drawing.Size(293, 196)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PnlMenu1 As TheIdeaGuy.pnlMenu
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+
 End Class

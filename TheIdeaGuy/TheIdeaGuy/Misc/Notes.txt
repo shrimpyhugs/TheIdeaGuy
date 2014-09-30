@@ -1,8 +1,5 @@
 ﻿TODO:
-Work on Skill Types
-Work on Worker Types
-Work on Perk Types
-Project Specific "Types"
+Fill out all different "Types" Enums
 
 BUGS:
 Randomizer for Skills in NewGameDialog still produce duplicate results :/

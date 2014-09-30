@@ -79,11 +79,53 @@
     <Compile Include="Forms\NewGameDialog.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Menu.Designer.vb">
-      <DependentUpon>Menu.vb</DependentUpon>
+    <Compile Include="Forms\pnlMain.Designer.vb">
+      <DependentUpon>pnlMain.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Menu.vb">
+    <Compile Include="Forms\pnlMain.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\pnlMenu.Designer.vb">
+      <DependentUpon>pnlMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\pnlMenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\User Controls\Game Panels\pnlProfile.Designer.vb">
+      <DependentUpon>pnlProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User Controls\Game Panels\pnlProfile.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Screen.Designer.vb">
+      <DependentUpon>Screen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Screen.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User Controls\Game Panels\pnlCreateProject.Designer.vb">
+      <DependentUpon>pnlCreateProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User Controls\Game Panels\pnlCreateProject.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\User Controls\Game Panels\pnlHire.Designer.vb">
+      <DependentUpon>pnlHire.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User Controls\Game Panels\pnlHire.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\User Controls\Game Panels\pnlProject.Designer.vb">
+      <DependentUpon>pnlProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User Controls\Game Panels\pnlProject.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\User Controls\Game Panels\pnlViewProjects.Designer.vb">
+      <DependentUpon>pnlViewProjects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User Controls\Game Panels\pnlViewProjects.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -108,29 +150,29 @@
     <Compile Include="Projects\ProjectTech.vb" />
     <Compile Include="Character\Skill.vb" />
     <Compile Include="Projects\Worker.vb" />
-    <Compile Include="Forms\Screen.Designer.vb">
-      <DependentUpon>Screen.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Screen.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="World.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Forms\NewGameDialog.resx">
       <DependentUpon>NewGameDialog.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Menu.resx">
-      <DependentUpon>Menu.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\pnlMain.resx">
+      <DependentUpon>pnlMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\pnlMenu.resx">
+      <DependentUpon>pnlMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Screen.resx">
+      <DependentUpon>Screen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User Controls\Game Panels\pnlProfile.resx">
+      <DependentUpon>pnlProfile.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Screen.resx">
-      <DependentUpon>Screen.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

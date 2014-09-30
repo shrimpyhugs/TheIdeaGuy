@@ -1,8 +1,8 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Menu
-    Inherits System.Windows.Forms.Form
+Partial Class pnlMenu
+    Inherits System.Windows.Forms.UserControl
 
-    'Form overrides dispose to clean up the component list.
+    'UserControl overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
@@ -27,23 +27,23 @@ Partial Class Menu
         '
         'btnNewGame
         '
-        Me.btnNewGame.Location = New System.Drawing.Point(12, 12)
+        Me.btnNewGame.Location = New System.Drawing.Point(190, 135)
         Me.btnNewGame.Name = "btnNewGame"
-        Me.btnNewGame.Size = New System.Drawing.Size(203, 23)
+        Me.btnNewGame.Size = New System.Drawing.Size(75, 23)
         Me.btnNewGame.TabIndex = 0
         Me.btnNewGame.Text = "New Game"
         Me.btnNewGame.UseVisualStyleBackColor = True
         '
-        'Menu
+        'pnlMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(227, 47)
         Me.Controls.Add(Me.btnNewGame)
-        Me.Name = "Menu"
-        Me.Text = "Menu"
+        Me.Name = "pnlMenu"
+        Me.Size = New System.Drawing.Size(468, 313)
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents btnNewGame As System.Windows.Forms.Button
+
 End Class
