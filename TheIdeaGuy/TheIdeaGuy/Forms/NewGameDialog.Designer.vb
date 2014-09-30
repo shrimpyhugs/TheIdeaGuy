@@ -22,7 +22,6 @@ Partial Class NewGameDialog
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.OK_Button = New System.Windows.Forms.Button()
         Me.Cancel_Button = New System.Windows.Forms.Button()
@@ -32,9 +31,7 @@ Partial Class NewGameDialog
         Me.BtnSkillRandom = New System.Windows.Forms.Button()
         Me.cbxSkill1 = New System.Windows.Forms.ComboBox()
         Me.cbxSkill2 = New System.Windows.Forms.ComboBox()
-        Me.SkillTypesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.SkillTypesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -123,10 +120,6 @@ Partial Class NewGameDialog
         Me.cbxSkill2.Size = New System.Drawing.Size(121, 21)
         Me.cbxSkill2.TabIndex = 8
         '
-        'SkillTypesBindingSource
-        '
-        Me.SkillTypesBindingSource.DataSource = GetType(TheIdeaGuy.Skill.SkillTypes)
-        '
         'NewGameDialog
         '
         Me.AcceptButton = Me.OK_Button
@@ -149,7 +142,6 @@ Partial Class NewGameDialog
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Create New Game!"
         Me.TableLayoutPanel1.ResumeLayout(False)
-        CType(Me.SkillTypesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -163,6 +155,5 @@ Partial Class NewGameDialog
     Friend WithEvents BtnSkillRandom As System.Windows.Forms.Button
     Friend WithEvents cbxSkill1 As System.Windows.Forms.ComboBox
     Friend WithEvents cbxSkill2 As System.Windows.Forms.ComboBox
-    Friend WithEvents SkillTypesBindingSource As System.Windows.Forms.BindingSource
 
 End Class

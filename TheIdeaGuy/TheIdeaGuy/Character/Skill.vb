@@ -5,5 +5,10 @@
         BoardGame
         CardGame
     End Enum
-    Dim SkillStrength As Integer 'the strength of the skill (1-100 maybe?)
+    Dim SkillStrength As Integer = 1 'the strength of the skill (1-100 maybe?)
+    Public Sub New(ByVal tSkillType As SkillTypes)
+        Skilltype = tSkillType 'sets skill type
+    End Sub
+
+
 End Class

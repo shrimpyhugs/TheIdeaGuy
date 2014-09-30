@@ -31,17 +31,19 @@ Partial Class Screen
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PnlMenu1.AutoSize = True
+        Me.PnlMenu1.BackColor = System.Drawing.SystemColors.ControlLight
         Me.PnlMenu1.Location = New System.Drawing.Point(12, 12)
         Me.PnlMenu1.Name = "PnlMenu1"
-        Me.PnlMenu1.Size = New System.Drawing.Size(544, 346)
+        Me.PnlMenu1.Size = New System.Drawing.Size(689, 346)
         Me.PnlMenu1.TabIndex = 0
         '
         'Screen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(568, 370)
+        Me.ClientSize = New System.Drawing.Size(713, 370)
         Me.Controls.Add(Me.PnlMenu1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Screen"
         Me.Text = "Screen"
         Me.ResumeLayout(False)

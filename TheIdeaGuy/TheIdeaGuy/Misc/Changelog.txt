@@ -51,5 +51,10 @@ indent = addition inside of above addition
 + Added pnlProject
 + Added pnlHire
 + Added pnlCreateProjects
+/ Modified pnlMain Docking into Screen form
+/ Modified pnlMain to create an instance of the World
+/ Modified NewGameDialog to send through the name value to be added to MyProfile
+/ Modified Skill class's New sub to set the SkillType
++ Added Balance variable in Profile class
 ----------------------------------
 

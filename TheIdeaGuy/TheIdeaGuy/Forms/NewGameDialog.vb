@@ -3,12 +3,22 @@
 Public Class NewGameDialog
     Dim Skill1Previous As Integer 'stores skill 1's previous result for comparison
     Dim Skill2Previous As Integer 'stores skill 2's previous result for comparison
+    Dim SkillChoice As New Dictionary(Of Integer, Skill.SkillTypes)
+
+    Public Sub New()
+        InitializeComponent() 'you know the drill, no touchie touchie
+        'adding the skill types REMEMBER TO MODIFY THE DATA IN THE COMBO BOXES TOOOO
+        SkillChoice.Add(0, Skill.SkillTypes.VideoGame)
+        SkillChoice.Add(1, Skill.SkillTypes.BoardGame)
+        SkillChoice.Add(2, Skill.SkillTypes.CardGame)
+    End Sub
     Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK_Button.Click
         If txtName.Text IsNot "" Then 'if Name has been specified
 
             Screen.Controls.Clear() 'remove main menu
-            Screen.Controls.Add(New pnlMain) 'adds main game panel
-
+            Dim pnlMain As pnlMain = New pnlMain
+            Screen.Controls.Add(pnlMain) 'adds main game panel
+            pnlMain.Start(txtName.Text, SkillChoice(cbxSkill1.SelectedIndex), SkillChoice(cbxSkill2.SelectedIndex)) 'first time load of the pnlMain to set NewGame stats
             Me.Close() 'closes the Dialog
         Else 'error message
             MsgBox("You need to specify a Name for your character!", vbOKOnly, "Name Required!")
@@ -26,7 +36,7 @@ Public Class NewGameDialog
         Dim Skill2 As Integer = Int(Rnd() * 3) 'randomize skill 2
         'make sure they're not the same, repeat until different
         Do While (Skill1 = Skill2)
-            Skill2 = Int(Rnd() * 3)
+            Skill1 = Int(Rnd() * 3)
         Loop
 
         cbxSkill1.SelectedIndex = Skill1 'set skill 1
@@ -43,7 +53,7 @@ Public Class NewGameDialog
     End Sub
 
     Private Sub cbxSkill2_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cbxSkill2.SelectedIndexChanged
-        If cbxSkill1.SelectedIndex = cbxSkill2.SelectedIndex Then 'if selections are the same
+        If cbxSkill2.SelectedIndex = cbxSkill1.SelectedIndex Then 'if selections are the same
             MsgBox("You Cannot have two of the same skill!", vbOKOnly, "Same Skill!")
             cbxSkill2.SelectedIndex = Skill2Previous 'set it to previous selection
         Else 'let it pass, update skill1Previous
