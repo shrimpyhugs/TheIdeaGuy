@@ -10,7 +10,7 @@
     Public Sub New()
 
         'loading the world
-        TimeSet(1) 'set number of Ticks per day to 10
+        SpeedSet(1) 'set number of Ticks per day to 10
         WorldTimer.Interval() = 100 'sets Timer Tick every second
         WorldTimer.Enabled = True 'starts the timer
     End Sub
@@ -24,6 +24,7 @@
 
             CurrentTick = 0 'reset CurrentTicks
             DateAdd() 'add a day
+
         End If
     End Sub
 
@@ -63,7 +64,7 @@
 
     End Sub
 
-    Public Sub TimeSet(ByVal NewTime As Integer)
+    Public Sub SpeedSet(ByVal NewTime As Integer)
         DayTicks = NewTime * 10 'sets ticks per day as 10 * new time multiplier
     End Sub
 End Class

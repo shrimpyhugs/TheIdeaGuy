@@ -11,14 +11,26 @@ Public Class NewGameDialog
         SkillChoice.Add(0, Skill.SkillTypes.VideoGame)
         SkillChoice.Add(1, Skill.SkillTypes.BoardGame)
         SkillChoice.Add(2, Skill.SkillTypes.CardGame)
+
+        Randomize()
+        'randomize the skill selections on startup
+        Dim Skill1 As Integer = Int(Rnd() * 3) 'randomize skill1
+        Dim Skill2 As Integer = Int(Rnd() * 3) 'randomize skill 2
+        'make sure they're not the same, repeat until different
+        Do While (Skill1 = Skill2)
+            Skill1 = Int(Rnd() * 3)
+        Loop
+
+        cbxSkill1.SelectedIndex = Skill1 'set skill 1
+        cbxSkill2.SelectedIndex = Skill2 'set skill 2
     End Sub
     Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK_Button.Click
         If txtName.Text IsNot "" Then 'if Name has been specified
 
             Screen.Controls.Clear() 'remove main menu
-            Dim pnlMain As pnlMain = New pnlMain
-            Screen.Controls.Add(pnlMain) 'adds main game panel
-            pnlMain.Start(txtName.Text, SkillChoice(cbxSkill1.SelectedIndex), SkillChoice(cbxSkill2.SelectedIndex)) 'first time load of the pnlMain to set NewGame stats
+            Dim MainPanel As pnlMain = New pnlMain
+            Screen.Controls.Add(MainPanel) 'adds main game panel
+            MainPanel.Start(txtName.Text, SkillChoice(cbxSkill1.SelectedIndex), SkillChoice(cbxSkill2.SelectedIndex)) 'first time load of the pnlMain to set NewGame stats
             Me.Close() 'closes the Dialog
         Else 'error message
             MsgBox("You need to specify a Name for your character!", vbOKOnly, "Name Required!")

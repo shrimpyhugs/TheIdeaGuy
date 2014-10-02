@@ -57,4 +57,11 @@ indent = addition inside of above addition
 / Modified Skill class's New sub to set the SkillType
 + Added Balance variable in Profile class
 ----------------------------------
-
+1/10/2014 - Dylan Hughes
++ Added pnlHomePage
+/ Modified pnlMain and pnlProfile to get skills and name to pass through
++ added SkillChoice Dictionary to Skills class
++ Added pnlInGameMenu
++ Added pnlHomePage
+/ modified pnlMain to have tabs open their respective pages
++ Added PerkPayment variable to Perk Class

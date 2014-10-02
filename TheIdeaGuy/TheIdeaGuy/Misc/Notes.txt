@@ -1,7 +1,6 @@
 ﻿TODO:
 Fill out all different "Types" Enums
 
-Get Skills entered in NewGameDialog to get put into the profile
 
 BUGS:
 Randomizer for Skills in NewGameDialog still produce duplicate results :/

@@ -11,7 +11,7 @@
     Dim Genre As FilmGenres 'the genre of film
     Enum FilmGenres
         Documentary
-        Comdedy
+        Comedy
         Drama
         Romance
         'etc

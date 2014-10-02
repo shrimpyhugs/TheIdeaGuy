@@ -43,7 +43,7 @@ Partial Class pnlProfile
         'lblName
         '
         Me.lblName.AutoSize = True
-        Me.lblName.Location = New System.Drawing.Point(21, 105)
+        Me.lblName.Location = New System.Drawing.Point(32, 59)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(39, 13)
         Me.lblName.TabIndex = 1
@@ -52,7 +52,7 @@ Partial Class pnlProfile
         'lblSkill1
         '
         Me.lblSkill1.AutoSize = True
-        Me.lblSkill1.Location = New System.Drawing.Point(21, 118)
+        Me.lblSkill1.Location = New System.Drawing.Point(32, 119)
         Me.lblSkill1.Name = "lblSkill1"
         Me.lblSkill1.Size = New System.Drawing.Size(39, 13)
         Me.lblSkill1.TabIndex = 2
@@ -61,7 +61,7 @@ Partial Class pnlProfile
         'lblSkill2
         '
         Me.lblSkill2.AutoSize = True
-        Me.lblSkill2.Location = New System.Drawing.Point(21, 135)
+        Me.lblSkill2.Location = New System.Drawing.Point(32, 142)
         Me.lblSkill2.Name = "lblSkill2"
         Me.lblSkill2.Size = New System.Drawing.Size(39, 13)
         Me.lblSkill2.TabIndex = 3

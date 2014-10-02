@@ -72,7 +72,6 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Forms\NewGameDialog.Designer.vb">
       <DependentUpon>NewGameDialog.vb</DependentUpon>
     </Compile>
@@ -89,6 +88,24 @@
       <DependentUpon>pnlMenu.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\pnlMenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ProfileBox.Designer.vb">
+      <DependentUpon>ProfileBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProfileBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\User Controls\Game Panels\pnlInGameMenu.Designer.vb">
+      <DependentUpon>pnlInGameMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User Controls\Game Panels\pnlInGameMenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\User Controls\Game Panels\pnlHomePage.Designer.vb">
+      <DependentUpon>pnlHomePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User Controls\Game Panels\pnlHomePage.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\User Controls\Game Panels\pnlProfile.Designer.vb">
@@ -162,8 +179,17 @@
     <EmbeddedResource Include="Forms\pnlMenu.resx">
       <DependentUpon>pnlMenu.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProfileBox.resx">
+      <DependentUpon>ProfileBox.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Screen.resx">
       <DependentUpon>Screen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User Controls\Game Panels\pnlInGameMenu.resx">
+      <DependentUpon>pnlInGameMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User Controls\Game Panels\pnlHomePage.resx">
+      <DependentUpon>pnlHomePage.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\User Controls\Game Panels\pnlProfile.resx">
       <DependentUpon>pnlProfile.vb</DependentUpon>

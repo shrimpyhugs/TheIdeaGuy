@@ -11,3 +11,5 @@ C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\T
 C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.pnlMenu.resources
 C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.pnlMain.resources
 C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.Screen.resources
+C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.ProfileBox.resources
+C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.pnlHomePage.resources

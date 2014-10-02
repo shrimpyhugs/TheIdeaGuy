@@ -31,8 +31,9 @@ Partial Class pnlMain
         Me.lblDateLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.lblDate = New System.Windows.Forms.ToolStripStatusLabel()
         Me.lblBalanceLabel = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.pnlHolder = New System.Windows.Forms.Panel()
         Me.lblBalance = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.pnlHolder = New System.Windows.Forms.Panel()
+        Me.ViewHomePageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuMain.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.pnlHolder.SuspendLayout()
@@ -40,7 +41,7 @@ Partial Class pnlMain
         '
         'MenuMain
         '
-        Me.MenuMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem, Me.ProfileToolStripMenuItem, Me.CreateNewProjectToolStripMenuItem, Me.ViewProjectsToolStripMenuItem})
+        Me.MenuMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem, Me.ProfileToolStripMenuItem, Me.CreateNewProjectToolStripMenuItem, Me.ViewProjectsToolStripMenuItem, Me.ViewHomePageToolStripMenuItem})
         Me.MenuMain.Location = New System.Drawing.Point(0, 0)
         Me.MenuMain.Name = "MenuMain"
         Me.MenuMain.Size = New System.Drawing.Size(655, 24)
@@ -84,13 +85,13 @@ Partial Class pnlMain
         'lblDateLabel
         '
         Me.lblDateLabel.Name = "lblDateLabel"
-        Me.lblDateLabel.Size = New System.Drawing.Size(39, 19)
+        Me.lblDateLabel.Size = New System.Drawing.Size(39, 17)
         Me.lblDateLabel.Text = "DATE:"
         '
         'lblDate
         '
         Me.lblDate.Name = "lblDate"
-        Me.lblDate.Size = New System.Drawing.Size(59, 19)
+        Me.lblDate.Size = New System.Drawing.Size(59, 17)
         Me.lblDate.Text = "XX/XX/XX"
         '
         'lblBalanceLabel
@@ -98,8 +99,14 @@ Partial Class pnlMain
         Me.lblBalanceLabel.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Left
         Me.lblBalanceLabel.BorderStyle = System.Windows.Forms.Border3DStyle.Bump
         Me.lblBalanceLabel.Name = "lblBalanceLabel"
-        Me.lblBalanceLabel.Size = New System.Drawing.Size(66, 19)
+        Me.lblBalanceLabel.Size = New System.Drawing.Size(66, 17)
         Me.lblBalanceLabel.Text = "BALANCE:"
+        '
+        'lblBalance
+        '
+        Me.lblBalance.Name = "lblBalance"
+        Me.lblBalance.Size = New System.Drawing.Size(48, 17)
+        Me.lblBalance.Text = "$XXXXX"
         '
         'pnlHolder
         '
@@ -112,11 +119,11 @@ Partial Class pnlMain
         Me.pnlHolder.Size = New System.Drawing.Size(649, 303)
         Me.pnlHolder.TabIndex = 2
         '
-        'lblBalance
+        'ViewHomePageToolStripMenuItem
         '
-        Me.lblBalance.Name = "lblBalance"
-        Me.lblBalance.Size = New System.Drawing.Size(48, 19)
-        Me.lblBalance.Text = "$XXXXX"
+        Me.ViewHomePageToolStripMenuItem.Name = "ViewHomePageToolStripMenuItem"
+        Me.ViewHomePageToolStripMenuItem.Size = New System.Drawing.Size(109, 20)
+        Me.ViewHomePageToolStripMenuItem.Text = "View Home Page"
         '
         'pnlMain
         '
@@ -148,5 +155,6 @@ Partial Class pnlMain
     Friend WithEvents pnlHolder As System.Windows.Forms.Panel
     Friend WithEvents lblBalanceLabel As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents lblBalance As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents ViewHomePageToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
