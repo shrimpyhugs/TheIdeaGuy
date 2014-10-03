@@ -69,5 +69,11 @@ indent = addition inside of above addition
 3/10/2014 - Dylan Hughes
 / Modified Tick; Moved the actual tick to pnlMain from the World Class,
 	and changed speed setting to use / instead of * 
+
 	(so 2 will make it take half the time as opposed to twice as long)
 / Modified pnlMain, fixed it so that the StatusStrip readded itself after the holder panel was cleared :P
++ Added Game Speed settings in pnlMain and got them to work!
++ Added Project Creation in CreateProjectPanel
++ Added crude ViewProjects List of projects
++ Added update functionality so that each day the DaysToGo decreases, and when it reaches 0 it goes into the Development Stage.
++ Added Pause Functionality

@@ -185,6 +185,9 @@
     <EmbeddedResource Include="Forms\Screen.resx">
       <DependentUpon>Screen.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User Controls\Game Panels\pnlCreateProject.resx">
+      <DependentUpon>pnlCreateProject.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\User Controls\Game Panels\pnlInGameMenu.resx">
       <DependentUpon>pnlInGameMenu.vb</DependentUpon>
     </EmbeddedResource>
@@ -193,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\User Controls\Game Panels\pnlProfile.resx">
       <DependentUpon>pnlProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User Controls\Game Panels\pnlViewProjects.resx">
+      <DependentUpon>pnlViewProjects.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

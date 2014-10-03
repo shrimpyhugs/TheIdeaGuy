@@ -5,11 +5,30 @@
     Public DayTicks As Integer = 10 'the number of ticks each day
     Public CurrentTick As Integer 'the current tick in the day
     Public MyProjects() As Project 'Array of Projects
+    Public ProjectsTotal As Integer = 0 'number for the Projects Array
     Public MyProfile As New Profile 'creates player profile
 
     Public Sub New()
         'loading the world
         SpeedSet(1) 'set number of Ticks per day to 10
+    End Sub
+    Public Sub AddProject(ByVal tName As String)
+        ProjectsTotal = ProjectsTotal + 1 'increase projects total
+        ReDim Preserve MyProjects(ProjectsTotal) 'adds a new project
+        MyProjects(ProjectsTotal - 1) = New Project 'instantiates Project
+        MyProjects(ProjectsTotal - 1).Title = tName 'adds name
+        MyProjects(ProjectsTotal - 1).Stage = Project.Stages.Funding 'sets project stage to funding
+    End Sub
+
+    Public Sub UpdateProjects()
+        For i = 0 To (ProjectsTotal - 1)
+            If MyProjects(i).Stage = Project.Stages.Funding Then
+                MyProjects(i).DaysToGo = MyProjects(i).DaysToGo - 1 'removes a day
+            End If
+            If MyProjects(i).DaysToGo = 0 Then
+                MyProjects(i).Stage = Project.Stages.Development
+            End If
+        Next
     End Sub
 
     Public Sub DateAdd()
@@ -48,7 +67,11 @@
 
     End Sub
 
-    Public Sub SpeedSet(ByVal NewTime As Integer)
-        DayTicks = 10 / NewTime 'sets ticks per day as 10 / Time Modifier e.g (x2 = 10/2 = 5)
+    Public Sub SpeedSet(ByVal NewTime As Double)
+        DayTicks = Int(10 / NewTime) 'sets ticks per day as 10 / Time Modifier e.g (x2 = 10/2 = 5)
+        If CurrentTick > DayTicks Then 'if its already passed that number
+            DateAdd() 'add a new day
+            CurrentTick = 0 'reset tick count
+        End If
     End Sub
 End Class

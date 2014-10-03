@@ -14,3 +14,5 @@ C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\T
 C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.ProfileBox.resources
 C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.pnlHomePage.resources
 C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.pnlInGameMenu.resources
+C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.pnlCreateProject.resources
+C:\Users\Dylan\Documents\GitHub\TheIdeaGuy\TheIdeaGuy\TheIdeaGuy\obj\x86\Debug\TheIdeaGuy.pnlViewProjects.resources

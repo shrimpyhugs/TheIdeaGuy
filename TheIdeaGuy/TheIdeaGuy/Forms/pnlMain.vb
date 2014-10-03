@@ -18,9 +18,21 @@
 
     Public Sub WorldUpdate() Handles WorldTimer.Tick 'whenever the timer ticks over, update.
         GameWorld.CurrentTick = GameWorld.CurrentTick + 1 'increase CurrentTick
-        ProfilePanel.lblName.Text = GameWorld.CurrentTick 'TESTTTT
+        ProfilePanel.lblName.Text = Str(GameWorld.CurrentTick) + "/" + Str(GameWorld.DayTicks)
+        lblBalance.Text = "$" + Str(GameWorld.MyProfile.Balance) 'loads the balance
+        ViewProjectsPanel.ListBox1.Items.Clear() 'clears projects
+        If pnlHolder.Controls.Contains(ViewProjectsPanel) Then 'if in View Projects 
+            'display test stuffs
+            For i = 0 To (GameWorld.ProjectsTotal - 1) 'for every project
+                ViewProjectsPanel.ListBox1.Items.Add(GameWorld.MyProjects(i).Title)
+                ViewProjectsPanel.ListBox1.Items.Add(Str(GameWorld.MyProjects(i).DaysToGo))
+                ViewProjectsPanel.ListBox1.Items.Add(GameWorld.MyProjects(i).StageName(GameWorld.MyProjects(i).Stage))
+            Next
+        End If
         If GameWorld.CurrentTick = GameWorld.DayTicks Then 'if its a new day
             GameWorld.DateAdd() 'add a day
+            GameWorld.UpdateProjects() 'updates the projects on new 
+
             'updating Date
             lblDate.Text = Str(GameWorld.CurrentDate(0)) + "/" + Str(GameWorld.CurrentDate(1)) + "/" + Str(GameWorld.CurrentDate(2))
             GameWorld.CurrentTick = 0 'reset CurrentTicks
@@ -74,5 +86,45 @@
         pnlHolder.Controls.Add(HomePagePanel) 'add HomePage control
         HomePagePanel.Dock = DockStyle.Fill 'fill 'er up!
 
+    End Sub
+
+    Private Sub ToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem2.Click
+        If WorldTimer.Enabled = False Then WorldTimer.Start() 'makes sure the timer is running
+        GameWorld.SpeedSet(0.25) 'set game speed
+        GameSpeedToolStripMenuItem.Text = "Game Speed: Really Slow" 'display the set speed
+    End Sub
+
+    Private Sub ToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem3.Click
+        If WorldTimer.Enabled = False Then WorldTimer.Start() 'makes sure the timer is running
+        GameWorld.SpeedSet(0.5) 'set game speed
+        GameSpeedToolStripMenuItem.Text = "Game Speed: Slow" 'display the set speed
+    End Sub
+
+    Private Sub ToolStripMenuItem4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem4.Click
+        If WorldTimer.Enabled = False Then WorldTimer.Start() 'makes sure the timer is running
+        GameWorld.SpeedSet(1) 'set game speed
+        GameSpeedToolStripMenuItem.Text = "Game Speed: Normal" 'display the set speed
+    End Sub
+
+    Private Sub ToolStripMenuItem5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem5.Click
+        If WorldTimer.Enabled = False Then WorldTimer.Start() 'makes sure the timer is running
+        GameWorld.SpeedSet(2) 'set game speed
+        GameSpeedToolStripMenuItem.Text = "Game Speed: Fast" 'display the set speed
+    End Sub
+
+    Private Sub ToolStripMenuItem6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem6.Click
+        If WorldTimer.Enabled = False Then WorldTimer.Start() 'makes sure the timer is running
+        GameWorld.SpeedSet(3) 'set game speed
+        GameSpeedToolStripMenuItem.Text = "Game Speed: Very Fast" 'display the set speed
+    End Sub
+
+    Private Sub ToolStripMenuItem8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem8.Click
+        If WorldTimer.Enabled = False Then WorldTimer.Start() 'makes sure the timer is running
+        GameWorld.SpeedSet(10) 'set game speed
+        GameSpeedToolStripMenuItem.Text = "Game Speed: Super Fast" 'display the set speed
+    End Sub
+
+    Private Sub PauseToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PauseToolStripMenuItem.Click
+        WorldTimer.Stop() 'pauses
     End Sub
 End Class
