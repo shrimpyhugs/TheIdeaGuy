@@ -65,3 +65,9 @@ indent = addition inside of above addition
 + Added pnlHomePage
 / modified pnlMain to have tabs open their respective pages
 + Added PerkPayment variable to Perk Class
+----------------------------------
+3/10/2014 - Dylan Hughes
+/ Modified Tick; Moved the actual tick to pnlMain from the World Class,
+	and changed speed setting to use / instead of * 
+	(so 2 will make it take half the time as opposed to twice as long)
+/ Modified pnlMain, fixed it so that the StatusStrip readded itself after the holder panel was cleared :P

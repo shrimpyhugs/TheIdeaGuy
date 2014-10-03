@@ -1,6 +1,7 @@
 ﻿Imports System.Windows.Forms
 
 Public Class NewGameDialog
+    Public Shared MainPanel As pnlMain 'The Main Panel
     Dim Skill1Previous As Integer 'stores skill 1's previous result for comparison
     Dim Skill2Previous As Integer 'stores skill 2's previous result for comparison
     Dim SkillChoice As New Dictionary(Of Integer, Skill.SkillTypes)
@@ -26,9 +27,8 @@ Public Class NewGameDialog
     End Sub
     Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK_Button.Click
         If txtName.Text IsNot "" Then 'if Name has been specified
-
             Screen.Controls.Clear() 'remove main menu
-            Dim MainPanel As pnlMain = New pnlMain
+            MainPanel = New pnlMain 'instantiates Main Panel
             Screen.Controls.Add(MainPanel) 'adds main game panel
             MainPanel.Start(txtName.Text, SkillChoice(cbxSkill1.SelectedIndex), SkillChoice(cbxSkill2.SelectedIndex)) 'first time load of the pnlMain to set NewGame stats
             Me.Close() 'closes the Dialog

@@ -27,13 +27,13 @@ Partial Class pnlMain
         Me.ProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CreateNewProjectToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ViewProjectsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewHomePageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.lblDateLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.lblDate = New System.Windows.Forms.ToolStripStatusLabel()
         Me.lblBalanceLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.lblBalance = New System.Windows.Forms.ToolStripStatusLabel()
         Me.pnlHolder = New System.Windows.Forms.Panel()
-        Me.ViewHomePageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuMain.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.pnlHolder.SuspendLayout()
@@ -72,11 +72,17 @@ Partial Class pnlMain
         Me.ViewProjectsToolStripMenuItem.Size = New System.Drawing.Size(89, 20)
         Me.ViewProjectsToolStripMenuItem.Text = "View Projects"
         '
+        'ViewHomePageToolStripMenuItem
+        '
+        Me.ViewHomePageToolStripMenuItem.Name = "ViewHomePageToolStripMenuItem"
+        Me.ViewHomePageToolStripMenuItem.Size = New System.Drawing.Size(109, 20)
+        Me.ViewHomePageToolStripMenuItem.Text = "View Home Page"
+        '
         'StatusStrip1
         '
         Me.StatusStrip1.AutoSize = False
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lblDateLabel, Me.lblDate, Me.lblBalanceLabel, Me.lblBalance})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 281)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 291)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(649, 22)
         Me.StatusStrip1.TabIndex = 1
@@ -116,14 +122,8 @@ Partial Class pnlMain
         Me.pnlHolder.Controls.Add(Me.StatusStrip1)
         Me.pnlHolder.Location = New System.Drawing.Point(3, 27)
         Me.pnlHolder.Name = "pnlHolder"
-        Me.pnlHolder.Size = New System.Drawing.Size(649, 303)
+        Me.pnlHolder.Size = New System.Drawing.Size(649, 313)
         Me.pnlHolder.TabIndex = 2
-        '
-        'ViewHomePageToolStripMenuItem
-        '
-        Me.ViewHomePageToolStripMenuItem.Name = "ViewHomePageToolStripMenuItem"
-        Me.ViewHomePageToolStripMenuItem.Size = New System.Drawing.Size(109, 20)
-        Me.ViewHomePageToolStripMenuItem.Text = "View Home Page"
         '
         'pnlMain
         '
@@ -134,7 +134,7 @@ Partial Class pnlMain
         Me.Controls.Add(Me.pnlHolder)
         Me.Controls.Add(Me.MenuMain)
         Me.Name = "pnlMain"
-        Me.Size = New System.Drawing.Size(655, 333)
+        Me.Size = New System.Drawing.Size(655, 341)
         Me.MenuMain.ResumeLayout(False)
         Me.MenuMain.PerformLayout()
         Me.StatusStrip1.ResumeLayout(False)

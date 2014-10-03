@@ -1,5 +1,6 @@
 ﻿Public Class pnlMain
     Public Shared GameWorld As New World 'create and initialise GameWorld
+    Public WithEvents WorldTimer As New Timer 'Timer for all events in the world
     Public ProfilePanel As pnlProfile 'instanciates and initialises pnlprofile
     Public ViewProjectsPanel As New pnlViewProjects 'instanciates and initialises pnlViewProjects
     Public CreateProjectPanel As New pnlCreateProject 'instanciates and initialises pnlCreateProject
@@ -9,7 +10,21 @@
     Public Sub New()
         InitializeComponent() 'oi dont touch this or i'll bite ya legs off
         pnlHolder.Controls.Add(ProfilePanel) 'starting form is Profile Panel
+        WorldTimer.Interval() = 1000 'sets Timer Tick every second
+        WorldTimer.Enabled = True 'starts the timer
+        lblDate.Text = Str(GameWorld.CurrentDate(0)) + "/" + Str(GameWorld.CurrentDate(1)) + "/" + Str(GameWorld.CurrentDate(2)) 'set the date pls
         Me.Dock = DockStyle.Fill 'docks to Screen
+    End Sub
+
+    Public Sub WorldUpdate() Handles WorldTimer.Tick 'whenever the timer ticks over, update.
+        GameWorld.CurrentTick = GameWorld.CurrentTick + 1 'increase CurrentTick
+        ProfilePanel.lblName.Text = GameWorld.CurrentTick 'TESTTTT
+        If GameWorld.CurrentTick = GameWorld.DayTicks Then 'if its a new day
+            GameWorld.DateAdd() 'add a day
+            'updating Date
+            lblDate.Text = Str(GameWorld.CurrentDate(0)) + "/" + Str(GameWorld.CurrentDate(1)) + "/" + Str(GameWorld.CurrentDate(2))
+            GameWorld.CurrentTick = 0 'reset CurrentTicks
+        End If
     End Sub
     Public Sub Start(ByVal tName As String, ByVal tSkill1 As Skill.SkillTypes, ByVal tSkill2 As Skill.SkillTypes)
         GameWorld.MyProfile.CharacterName = tName 'set Character Name
@@ -23,31 +38,41 @@
 
     Private Sub ProfileToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProfileToolStripMenuItem.Click
         pnlHolder.Controls.Clear() 'remove other controls
+        pnlHolder.Controls.Add(StatusStrip1) 'readd that status strip lol
         pnlHolder.Controls.Add(ProfilePanel) 'add profile control
         ProfilePanel.Dock = DockStyle.Fill 'fill 'er up!
+
     End Sub
 
     Private Sub ViewProjectsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ViewProjectsToolStripMenuItem.Click
         pnlHolder.Controls.Clear() 'remove other controls
+        pnlHolder.Controls.Add(StatusStrip1) 'readd that status strip lol
         pnlHolder.Controls.Add(ViewProjectsPanel) 'add View Projects control
         ViewProjectsPanel.Dock = DockStyle.Fill 'fill 'er up!
+
     End Sub
 
     Private Sub CreateNewProjectToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CreateNewProjectToolStripMenuItem.Click
         pnlHolder.Controls.Clear() 'remove other controls
+        pnlHolder.Controls.Add(StatusStrip1) 'readd that status strip lol
         pnlHolder.Controls.Add(CreateProjectPanel) 'add Create Projects control
         CreateProjectPanel.Dock = DockStyle.Fill 'fill 'er up!
+
     End Sub
 
     Private Sub MenuToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuToolStripMenuItem.Click
         pnlHolder.Controls.Clear() 'remove other controls
+        pnlHolder.Controls.Add(StatusStrip1) 'readd that status strip lol
         pnlHolder.Controls.Add(InGameMenuPanel) 'add View InGameMenu control
         InGameMenuPanel.Dock = DockStyle.Fill 'fill 'er up!
+
     End Sub
 
     Private Sub ViewHomePageToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ViewHomePageToolStripMenuItem.Click
         pnlHolder.Controls.Clear() 'remove other controls
+        pnlHolder.Controls.Add(StatusStrip1) 'readd that status strip lol
         pnlHolder.Controls.Add(HomePagePanel) 'add HomePage control
         HomePagePanel.Dock = DockStyle.Fill 'fill 'er up!
+
     End Sub
 End Class
