@@ -1,6 +1,7 @@
 ﻿Public Class Project
     'a class that stores the basics for a Project, no matter what type.
     Public Title As String 'the title for the project
+    Public Desc As String 'the description of the game
     Public Funding As Integer 'The amount raised thus far 
     Public Backers As Integer = 0 'The amount of backers thus far
     Public Target As Integer  'The amount needed for project to be successful

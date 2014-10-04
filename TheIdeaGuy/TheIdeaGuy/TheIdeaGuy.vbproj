@@ -108,6 +108,12 @@
     <Compile Include="Forms\User Controls\Game Panels\pnlHomePage.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Forms\User Controls\Game Panels\pnlPerk.Designer.vb">
+      <DependentUpon>pnlPerk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User Controls\Game Panels\pnlPerk.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Forms\User Controls\Game Panels\pnlProfile.Designer.vb">
       <DependentUpon>pnlProfile.vb</DependentUpon>
     </Compile>
@@ -167,6 +173,7 @@
     <Compile Include="Projects\ProjectTech.vb" />
     <Compile Include="Character\Skill.vb" />
     <Compile Include="Projects\Worker.vb" />
+    <Compile Include="Trends.vb" />
     <Compile Include="World.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -193,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\User Controls\Game Panels\pnlHomePage.resx">
       <DependentUpon>pnlHomePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User Controls\Game Panels\pnlPerk.resx">
+      <DependentUpon>pnlPerk.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\User Controls\Game Panels\pnlProfile.resx">
       <DependentUpon>pnlProfile.vb</DependentUpon>

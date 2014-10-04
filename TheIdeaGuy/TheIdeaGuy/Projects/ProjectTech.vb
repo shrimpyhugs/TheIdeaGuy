@@ -2,6 +2,7 @@
     Inherits Project
     Dim TechType As TechTypes 'the type of Technology it is
     Enum TechTypes
-        Entertainment
+        Device
+        Software
     End Enum
 End Class

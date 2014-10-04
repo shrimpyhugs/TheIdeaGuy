@@ -7,5 +7,8 @@
         Poster
         Copy
         ThankYou
+        TwoCopies
+        BehindtheScenes
+        Soundtrack
     End Enum
 End Class

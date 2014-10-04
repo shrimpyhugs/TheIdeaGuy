@@ -7,6 +7,8 @@
     Public MyProjects() As Project 'Array of Projects
     Public ProjectsTotal As Integer = 0 'number for the Projects Array
     Public MyProfile As New Profile 'creates player profile
+    Public Trend As New Trends 'creates the current trends
+    Public Week As Integer = 1 'week day 
 
     Public Sub New()
         'loading the world
@@ -24,6 +26,11 @@
         For i = 0 To (ProjectsTotal - 1)
             If MyProjects(i).Stage = Project.Stages.Funding Then
                 MyProjects(i).DaysToGo = MyProjects(i).DaysToGo - 1 'removes a day
+
+                '*****************************************************
+                ' MONEY RECIEVED THAT DAY ALGORITHM
+                '******************************************************
+
             End If
             If MyProjects(i).DaysToGo = 0 Then
                 MyProjects(i).Stage = Project.Stages.Development

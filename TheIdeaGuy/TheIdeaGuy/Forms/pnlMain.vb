@@ -32,6 +32,11 @@
         If GameWorld.CurrentTick = GameWorld.DayTicks Then 'if its a new day
             GameWorld.DateAdd() 'add a day
             GameWorld.UpdateProjects() 'updates the projects on new 
+            GameWorld.Week = GameWorld.Week + 1 'update day of the week
+            If GameWorld.Week = 8 Then
+                GameWorld.Week = 1 'start the week again
+                GameWorld.Trend.UpdateTrends() 'updates the trends for new week
+            End If
 
             'updating Date
             lblDate.Text = Str(GameWorld.CurrentDate(0)) + "/" + Str(GameWorld.CurrentDate(1)) + "/" + Str(GameWorld.CurrentDate(2))

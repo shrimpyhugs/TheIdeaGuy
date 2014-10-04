@@ -4,3 +4,8 @@ Fill out all different "Types" Enums
 
 BUGS:
 Randomizer for Skills in NewGameDialog still produce duplicate results :/
+
+
+TASKS:
+Trends, Homepage stuff
+Project Creation, Development Stage (no funding algorithm yet)
